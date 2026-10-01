@@ -1,0 +1,34 @@
+# Data and outputs are never committed.
+
+# GSE174609 is the dataset that belongs to Lee et al. and GEO. 
+# This repo only cites it and fetches it. It doesn't publish any of their data and it does not redistribute it.
+
+data/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+results/*
+!results/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+.env
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
