@@ -1,13 +1,7 @@
-# Data and outputs are never committed.
-
-# GSE174609 is the dataset that belongs to Lee et al. and GEO. 
-# This repo only cites it and fetches it. It doesn't publish any of their data and it does not redistribute it.
-
-data/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-results/*
-!results/.gitkeep
+# Data and results are never committed.
+# GSE174609 belongs to Lee et al. and GEO: cited and fetched, never redistributed.
+data/
+results/
 
 # Python
 __pycache__/
