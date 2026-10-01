@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scrnaseq-recovery"
+version = "0.0.1"
+description = "Validated, config-driven scRNA-seq pipeline for disease-state recovery analysis"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Kimberly Domingo" }]
+
+dependencies = [
+    "anndata>=0.13,<0.14",
+    "scanpy>=1.12,<1.13",
+    "pyyaml>=6,<7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9,<10",
+    "pytest-cov",
+    "ruff>=0.16,<0.17",
+    "pre-commit",
+    "nbstripout",
+    "jupyterlab",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/scrnaseq_recovery"]

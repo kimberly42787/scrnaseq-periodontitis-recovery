@@ -1,0 +1,10 @@
+name: scrnaseq-recovery
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - python-igraph
+  - leidenalg
+  - pip
+  - pip:
+      - -e .[dev]
