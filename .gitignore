@@ -1,0 +1,28 @@
+# Data and results are never committed.
+# GSE174609 belongs to Lee et al. and GEO: cited and fetched, never redistributed.
+data/
+results/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+.env
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
